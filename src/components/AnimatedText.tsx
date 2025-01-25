@@ -9,8 +9,8 @@ interface Props {
 export default function AnimatedText({ text, className = "", delay = 0 }: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -50 }}
-      animate={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay }}
       className={className}
     >
