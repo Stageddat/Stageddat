@@ -1,20 +1,22 @@
-<h1 align="left">Hey 👋</h1>
+<h1 align="left">hey 👋, im stageddat</h1>
 
 ###
 
-<p align="left">Im Stageddat</p>
+<p align="left">what am i supposed to put here?</p>
 
 ###
 
-<h2 align="left">About me</h2>
+<h2 align="left">about me</h2>
 
 ###
 
-<p align="left">💤 I like sleep :3</p>
+<p align="left">💤 i like sleep :3</p>
+<p align="left">🔫 detroit, rdr2 and mainkra on top</p>
+<p align="left">🟨🟦🪨</p>
 
 ###
 
-<h2 align="left">I code with</h2>
+<h2 align="left">i code with</h2>
 
 ###
 
