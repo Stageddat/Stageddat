@@ -12,15 +12,17 @@ import SocialIcon from "../components/SocialIcon";
         <div class="text-white space-y-6 text-center">
             <AnimatedText
                 text="Hi there!"
-                className="text-4xl md:text-8xl font-handwriting"
+                className="text-6xl md:text-8xl font-handwriting"
                 client:load
             />
             <AnimatedText
-                text="I'm Stageddat :)"
                 className="text-5xl md:text-9xl font-handwriting"
                 delay={0.2}
                 client:load
-            />
+            >
+                {/* Divide el texto en partes */}
+                I'm <span class="text-blue-500">Stageddat</span> :)
+            </AnimatedText>
             <div class="flex justify-center gap-8 pt-6">
                 {
                     socialLinks.map((link, index) => (
