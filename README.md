@@ -10,9 +10,9 @@
 
 ###
 
-<p align="left">💤 i like sleep :3</p>
-<p align="left">🔫 detroit, rdr2 and mainkra on top</p>
-<p align="left">🟨🟦🪨</p>
+<p align="left">- 💤 i like sleep :3</p>
+<p align="left">- 🔫 detroit, rdr2 and mainkra on top</p>
+<p align="left">- 🟨🟦🪨</p>
 
 ###
 
