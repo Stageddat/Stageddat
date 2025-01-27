@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">what am i supposed to put here?</p>
+<p align="left">just an idiot trying to do something and likes anime</p>
 
 ###
 
