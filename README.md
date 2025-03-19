@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">just an idiot trying to do something and likes anime</p>
+<p align="left">just an idiot who likes anime</p>
 
 ###
 
