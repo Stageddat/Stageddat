@@ -1,39 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { socialLinks } from "../data/socialLinks";
-import AnimatedText from "../components/AnimatedText";
-import SocialIcon from "../components/SocialIcon";
+import "../styles/global.css";
+import Hero from "../sections/Hero.astro";
 ---
 
 <Layout title="hi there 👋">
-    <main
-        id="main-bg"
-        class="min-h-screen flex items-center justify-center p-8 md:p-16 overflow-hidden"
-    >
-        <div class="text-white space-y-6 text-center">
-            <AnimatedText
-                text="hi there!"
-                className="text-6xl md:text-8xl font-handwriting"
-                client:load
-            />
-            <AnimatedText
-                className="text-5xl md:text-9xl font-handwriting"
-                delay={0.2}
-                client:load
-            >
-                im <span class="text-blue-500">stageddat</span> :)
-            </AnimatedText>
-            <div class="flex justify-center gap-8 pt-6">
-                {
-                    socialLinks.map((link, index) => (
-                        <SocialIcon {...link} client:load />
-                    ))
-                }
-            </div>
-        </div>
-    </main>
-
-    <script>
-        import "../scripts/dynamicBackground";
-    </script>
+  <Hero />
 </Layout>

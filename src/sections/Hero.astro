@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import poopHi from "../assets/poop/poop-hi.webp";
+---
+
+<div
+  class="hero w-full h-screen flex flex-col md:flex-row items-center justify-center px-4 gap-8"
+>
+  <div class="text-center md:text-left">
+    <h1 class="helloText text-7xl md:text-8xl lg:text-[10rem]">haiiii :3</h1>
+    <h2 class="helloText text-6xl md:text-7xl lg:text-[9rem]">im stageddat!</h2>
+  </div>
+  <div class="flex justify-center items-center">
+    <Image
+      src={poopHi}
+      alt="Poop waving hi"
+      class="w-48 h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 object-contain"
+    />
+  </div>
+</div>
+
+<style>
+  .helloText {
+    @apply font-bold;
+    font-family: "Caveat", cursive;
+  }
+</style>
