@@ -1,6 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import poopHi from "../assets/poop/poop-hi.gif";
 ---
 
 <div
@@ -11,12 +10,10 @@ import poopHi from "../assets/poop/poop-hi.gif";
     <h2 class="helloText text-6xl md:text-7xl lg:text-[9rem]">im stageddat!</h2>
   </div>
   <div class="flex justify-center items-center">
-    <Image
-      src={poopHi}
+    <img
+      src="/poop/poop-hi.gif"
       alt="Poop waving hi"
       class="w-48 h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 object-contain"
-      loading="eager"
-      decoding="async"
     />
   </div>
 </div>
