@@ -12,6 +12,7 @@ interface Quote {
 	text: string;
 	author: string;
 	image: string;
+	subtitle?: string;
 }
 
 interface QuoteCarouselProps {
@@ -26,7 +27,7 @@ export default function QuoteCarousel({ quotes }: QuoteCarouselProps) {
 					delay: 5000,
 				}),
 			]}
-			className="w-full max-w-4xl mx-auto"
+			className="w-full max-w-4xl mx-auto font-['Caveat']"
 		>
 			<CarouselContent>
 				{quotes.map((quote, index) => (
@@ -42,10 +43,15 @@ export default function QuoteCarousel({ quotes }: QuoteCarouselProps) {
 								</div>
 							</div>
 							<div className="w-full md:w-2/3 flex flex-col justify-center">
-								<blockquote className="text-xl md:text-2xl font-light italic text-gray-800 mb-6 leading-relaxed">
+								<blockquote className="text-4xl md:text-5xl font-normal italic text-gray-800 mb-2 leading-relaxed">
 									"{quote.text}"
 								</blockquote>
-								<cite className="block text-right text-gray-600 font-medium">
+								{quote.subtitle && (
+									<p className="text-2xl text-gray-500 mb-2">
+										{quote.subtitle}
+									</p>
+								)}
+								<cite className="block text-right text-gray-600 font-medium text-2xl">
 									— {quote.author}
 								</cite>
 							</div>

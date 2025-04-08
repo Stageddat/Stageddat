@@ -1,32 +1,49 @@
 ---
-// Quote.astro
 import QuoteCarousel from "../components/QuoteCarousel.tsx";
 
 type Quote = {
   text: string;
   author: string;
   image: string;
+  subtitle?: string;
 };
 
 const quotes: Quote[] = [
   {
-    text: "La mejor manera de predecir el futuro es inventarlo.",
-    author: "Alan Kay",
-    image: "/images/quotes/alan-kay.jpg",
+    text: "espabila coño, que la vida te va a comer",
+    subtitle: "wake the fuck up, life's gonna eat you alive",
+    author: "BaityBait",
+    image: "/authors/baity.jpeg",
   },
   {
-    text: "El único modo de hacer un gran trabajo es amar lo que haces.",
-    author: "Steve Jobs",
-    image: "/images/quotes/steve-jobs.jpg",
-  },
-  {
-    text: "La simplicidad es la sofisticación definitiva.",
-    author: "Leonardo da Vinci",
-    image: "/images/quotes/leonardo-da-vinci.jpg",
+    text: "There is nothing to be afraid of, Mr. Morgan.",
+    author: "S. Calderón to Arthur Morgan from Red Dead Redemption 2",
+    image: "/authors/arthur.jpg",
+    subtitle: "",
   },
 ];
 ---
 
-<div class="container mx-auto px-4 py-12">
+<div class="container mx-auto px-4 py-24">
+  <h2
+    class="myFavQuotesTitle text-center py-12 text-4xl md:text-6xl lg:text-9xl"
+  >
+    my favorites quotes
+  </h2>
   <QuoteCarousel quotes={quotes} client:load />
+  <div class="text-center mb-12">
+    <a
+      href="/quotes"
+      class="text-xl font-['Caveat'] text-gray-600 hover:text-indigo-600 transition-all duration-300 hover:scale-110 hover:underline inline-block"
+    >
+      check all the quotes
+    </a>
+  </div>
 </div>
+
+<style>
+  .myFavQuotesTitle {
+    @apply font-bold;
+    font-family: "Caveat";
+  }
+</style>
