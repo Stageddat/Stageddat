@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import poopHi from "src/assets/poop/poop-hi.gif";
+---
+
 <div
   class="hero w-full h-screen flex flex-col md:flex-row items-center justify-center px-4 gap-16 md:gap-24 relative mb-32"
 >
@@ -8,10 +13,11 @@
     </h2>
   </div>
   <div class="flex justify-center items-center">
-    <img
-      src="/poop/poop-hi.gif"
+    <Image
+      src={poopHi}
       alt="Poop waving hi"
       class="w-48 h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 object-contain"
+      loading="eager"
     />
   </div>
   <div class="absolute bottom-8 w-full flex justify-center animate-bounce">
