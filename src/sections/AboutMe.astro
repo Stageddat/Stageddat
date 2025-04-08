@@ -1,3 +1,15 @@
+---
+import {
+  FaPython,
+  FaReact,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+} from "react-icons/fa";
+import { SiAstro, SiTypescript } from "react-icons/si";
+---
+
 <div
   class="about-me w-full flex flex-col md:flex-row items-center justify-center px-8 md:px-16 gap-12 md:gap-20"
 >
@@ -9,6 +21,18 @@
     <p class="aboutMeText text-gray-500 text-lg md:text-xl lg:text-3xl">
       i like to sleep and watch anime
     </p>
+    <div class="technologies mt-6">
+      <div class="flex flex-wrap gap-4">
+        <FaPython className="text-4xl text-blue-500" title="Python" />
+        <FaJs className="text-4xl text-yellow-400" title="JavaScript" />
+        <SiTypescript className="text-4xl text-blue-700" title="TypeScript" />
+        <FaNodeJs className="text-4xl text-green-600" title="Node.js" />
+        <SiAstro className="text-4xl text-purple-600" title="Astro" />
+        <FaHtml5 className="text-4xl text-orange-500" title="HTML5" />
+        <FaReact className="text-4xl text-blue-400" title="React" />
+        <FaCss3Alt className="text-4xl text-blue-600" title="CSS3" />
+      </div>
+    </div>
   </div>
   <div class="flex justify-center items-center w-full md:w-1/3">
     <img
