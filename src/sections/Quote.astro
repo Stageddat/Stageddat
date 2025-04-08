@@ -1,0 +1,32 @@
+---
+// Quote.astro
+import QuoteCarousel from "../components/QuoteCarousel.tsx";
+
+type Quote = {
+  text: string;
+  author: string;
+  image: string;
+};
+
+const quotes: Quote[] = [
+  {
+    text: "La mejor manera de predecir el futuro es inventarlo.",
+    author: "Alan Kay",
+    image: "/images/quotes/alan-kay.jpg",
+  },
+  {
+    text: "El único modo de hacer un gran trabajo es amar lo que haces.",
+    author: "Steve Jobs",
+    image: "/images/quotes/steve-jobs.jpg",
+  },
+  {
+    text: "La simplicidad es la sofisticación definitiva.",
+    author: "Leonardo da Vinci",
+    image: "/images/quotes/leonardo-da-vinci.jpg",
+  },
+];
+---
+
+<div class="container mx-auto px-4 py-12">
+  <QuoteCarousel quotes={quotes} client:load />
+</div>
