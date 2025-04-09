@@ -36,7 +36,7 @@ import { Spoiler } from "spoiled";
             </div>
             <div class="w-full md:w-3/4 flex flex-col justify-center">
               {quote.spoiler ? (
-                <Spoiler client:load>
+                <Spoiler client:load theme="light" revealOn="click">
                   <blockquote class="text-xl md:text-3xl font-normal italic text-gray-800 mb-2 leading-relaxed font-['Montserrat']">
                     "{quote.text}"
                   </blockquote>
