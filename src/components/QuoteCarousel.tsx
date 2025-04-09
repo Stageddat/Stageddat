@@ -34,7 +34,7 @@ export default function QuoteCarousel({ quotes }: QuoteCarouselProps) {
 			opts={{
 				loop: true,
 			}}
-			className="w-full max-w-4xl mx-auto font-['Caveat']"
+			className="w-full max-w-4xl mx-auto font-['Montserrat']"
 		>
 			<CarouselContent>
 				{quotes.map((quote, index) => (
@@ -54,15 +54,15 @@ export default function QuoteCarousel({ quotes }: QuoteCarouselProps) {
 								</div>
 							</div>
 							<div className="w-full md:w-2/3 flex flex-col justify-center">
-								<blockquote className="text-4xl md:text-5xl font-normal italic text-gray-800 mb-2 leading-relaxed">
+								<blockquote className="text-2xl md:text-5xl font-normal italic text-gray-800 mb-2 leading-relaxed">
 									"{quote.text}"
 								</blockquote>
 								{quote.subtitle && (
-									<p className="text-2xl text-gray-500 mb-2">
+									<p className="text-xl text-gray-500 mb-2">
 										{quote.subtitle}
 									</p>
 								)}
-								<cite className="block text-right text-gray-600 font-medium text-2xl">
+								<cite className="text-lg block text-right text-gray-600 font-medium">
 									— {quote.author}
 								</cite>
 							</div>
