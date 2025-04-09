@@ -4,10 +4,10 @@ import poopHi from "src/assets/poop/poop-hi.gif";
 ---
 
 <div
-  class="hero w-full h-screen flex flex-col md:flex-row items-center justify-center px-4 gap-16 md:gap-24 relative mb-32"
+  class="hero w-full h-screen flex flex-col md:flex-row items-center justify-center px-4 gap-8 md:gap-16 relative mb-32"
 >
-  <div class="text-center md:text-left">
-    <h1 class="heroTitle text-7xl md:text-8xl lg:text-[10rem]">haiiii :3</h1>
+  <div class="text-left md:text-left mt-[-4rem] md:mt-0">
+    <h1 class="heroTitle text-7xl md:text-8xl lg:text-[10rem]">haiiiiii :3</h1>
     <h2 class="heroSubtitle text-6xl md:text-7xl lg:text-[9rem]">
       im stageddat!
     </h2>
@@ -16,11 +16,13 @@ import poopHi from "src/assets/poop/poop-hi.gif";
     <img
       src={poopHi.src}
       alt="Poop waving hi"
-      class="w-48 h-48 md:w-64 md:h-64 lg:w-96 lg:h-96 object-contain"
+      class="w-64 h-64 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] object-contain"
       loading="eager"
     />
   </div>
-  <div class="absolute bottom-8 w-full flex justify-center animate-bounce">
+  <div
+    class="absolute bottom-16 md:bottom-8 w-full flex justify-center animate-bounce"
+  >
     <svg
       class="w-12 h-12 text-black"
       fill="none"
