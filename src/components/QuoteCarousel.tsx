@@ -1,3 +1,4 @@
+// src/components/QuoteCarousel.tsx
 import React from 'react';
 import {
 	Carousel,
@@ -6,12 +7,14 @@ import {
 	CarouselPrevious,
 	CarouselNext,
 } from "./ui/carousel";
-import Autoplay from "embla-carousel-autoplay"
+import Autoplay from "embla-carousel-autoplay";
+
+import type { ImageMetadata } from "astro";
 
 interface Quote {
 	text: string;
 	author: string;
-	image: string;
+	image: ImageMetadata;
 	subtitle?: string;
 }
 
@@ -25,19 +28,27 @@ export default function QuoteCarousel({ quotes }: QuoteCarouselProps) {
 			plugins={[
 				Autoplay({
 					delay: 5000,
+					stopOnInteraction: true,
 				}),
 			]}
+			opts={{
+				loop: true,
+			}}
 			className="w-full max-w-4xl mx-auto font-['Caveat']"
 		>
 			<CarouselContent>
 				{quotes.map((quote, index) => (
 					<CarouselItem key={index}>
 						<div className="flex flex-col md:flex-row gap-6 p-8 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-lg border border-gray-100">
-							<div className="w-full md:w-1/3 flex items-center justify-center">
-								<div className="relative w-48 h-48 rounded-full overflow-hidden">
+							<div className="w-full md:w-1/3 flex items-center justify-center shrink-0">
+								<div className="relative w-48 h-48 rounded-full overflow-hidden shadow-md">
 									<img
-										src={quote.image}
-										alt={quote.author}
+										src={quote.image.src}
+										width={quote.image.width}
+										height={quote.image.height}
+										alt={`Portrait of ${quote.author}`}
+										loading="lazy"
+										decoding="async"
 										className="w-full h-full object-cover"
 									/>
 								</div>
@@ -59,8 +70,8 @@ export default function QuoteCarousel({ quotes }: QuoteCarouselProps) {
 					</CarouselItem>
 				))}
 			</CarouselContent>
-			<CarouselPrevious className="hidden md:flex" />
-			<CarouselNext className="hidden md:flex" />
+			<CarouselPrevious className="hidden md:flex text-gray-700 hover:text-indigo-600 transition-colors" />
+			<CarouselNext className="hidden md:flex text-gray-700 hover:text-indigo-600 transition-colors" />
 		</Carousel>
 	);
 }
