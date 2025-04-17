@@ -4,7 +4,7 @@ import QuoteCarousel from "../components/QuoteCarousel.tsx";
 import { quotes } from "../data/quoteData.ts";
 ---
 
-<div class="container mx-auto px-4 py-24">
+<div class="container mx-auto px-4 py-6">
   <h2
     class="myFavQuotesTitle text-center py-12 text-5xl md:text-6xl lg:text-9xl"
   >
@@ -13,7 +13,7 @@ import { quotes } from "../data/quoteData.ts";
 
   <QuoteCarousel quotes={quotes.slice(0, 3)} client:load />
 
-  <div class="text-center mt-12 mb-12">
+  <div class="text-center mt-0 md:mt-1 mb-1">
     <a
       href="/quotes"
       class="text-3xl font-['Caveat'] text-gray-600 hover:text-indigo-600 transition-all duration-300 hover:scale-110 hover:underline inline-block"
