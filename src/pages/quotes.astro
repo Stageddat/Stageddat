@@ -1,9 +1,74 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-import AllQuotes from "../sections/AllQuotes.astro";
+import { quotes } from "../data/quoteData.ts";
+import { Spoiler } from "spoiled";
 ---
 
 <Layout title="hi there 👋">
-  <AllQuotes />
+  <div class="container mx-auto px-4 py-12">
+    <h1
+      class="text-center py-8 text-5xl md:text-6xl lg:text-8xl font-bold font-['Caveat']"
+    >
+      all my favorite Quotes
+    </h1>
+    <p
+      class="text-center text-gray-500 text-xl md:text-xl lg:text-3xl font-['Caveat']"
+    >
+      random quotes I stole from somewhere :3
+    </p>
+
+    <div class="grid grid-cols-1 gap-8 max-w-5xl mx-auto my-12">
+      {
+        quotes.map((quote, index) => (
+          <div class="flex flex-col md:flex-row gap-6 p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+            <div class="w-full md:w-1/4 flex items-center justify-center shrink-0">
+              <div class="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-md">
+                <img
+                  src={quote.image.src}
+                  width={quote.image.width}
+                  height={quote.image.height}
+                  alt={`Portrait of ${quote.author}`}
+                  loading={index < 3 ? "eager" : "lazy"}
+                  decoding={index < 3 ? "sync" : "async"}
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="w-full md:w-3/4 flex flex-col justify-center">
+              {quote.spoiler ? (
+                <Spoiler client:load theme="light" revealOn="click">
+                  <blockquote class="text-xl md:text-3xl font-normal italic text-gray-800 mb-2 leading-relaxed font-['Montserrat']">
+                    "{quote.text}"
+                  </blockquote>
+                </Spoiler>
+              ) : (
+                <blockquote class="text-xl md:text-3xl font-normal italic text-gray-800 mb-2 leading-relaxed font-['Montserrat']">
+                  "{quote.text}"
+                </blockquote>
+              )}
+
+              {quote.subtitle && (
+                <p class="text-lg text-gray-500 mb-2 font-['Montserrat']">
+                  {quote.subtitle}
+                </p>
+              )}
+              <cite class="text-lg block text-right text-gray-600 font-medium font-['Montserrat']">
+                — {quote.author}
+              </cite>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="text-center mt-12 mb-12">
+      <a
+        href="/"
+        class="text-2xl font-['Caveat'] text-gray-600 hover:text-indigo-600 transition-all duration-300 hover:scale-110 hover:underline inline-block"
+      >
+        Back to home
+      </a>
+    </div>
+  </div>
 </Layout>
