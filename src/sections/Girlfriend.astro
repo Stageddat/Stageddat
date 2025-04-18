@@ -1,0 +1,46 @@
+---
+import randomGirl from "src/assets/random.jpeg";
+---
+
+<div
+  class="about-me w-full flex flex-col md:flex-row items-center justify-center px-8 md:px-16 gap-4 md:gap-8"
+>
+  <div class="text-left md:text-left w-full md:w-2/3 lg:w-2/5">
+    <h1 class="aboutMeTitle text-5xl md:text-6xl lg:text-9xl">
+      my girlfriend &lt;3
+    </h1>
+
+    <h2 class="aboutMeSubtitle text-3xl md:text-5xl lg:text-6xl">
+      she's the reason i'm alive &gt;w&lt;
+    </h2>
+    <div class="mt-8 text-center">
+      <a
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block px-8 py-4 text-2xl text-white font-['Caveat'] rounded-xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 transition-all duration-300 hover:scale-105 shadow-lg"
+      >
+        follow her on instagram ✨
+      </a>
+    </div>
+  </div>
+  <div class="flex justify-center items-center w-full md:w-1/3 my-12">
+    <img
+      src={randomGirl.src}
+      alt="Profile picture"
+      class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full border-4 border-white shadow-lg"
+    />
+  </div>
+</div>
+
+<style>
+  .aboutMeTitle,
+  .aboutMeSubtitle {
+    @apply font-bold;
+    font-family: "Caveat", cursive;
+  }
+
+  .aboutMeText {
+    font-family: "Caveat";
+  }
+</style>
