@@ -1,0 +1,120 @@
+---
+import LastWatchedAnime from "../components/LastWatchedAnime";
+import { Image } from "astro:assets";
+---
+
+<div class="py-6 px-4 sm:px-6 lg:px-8">
+  <h2 class="title text-center py-2 text-5xl md:text-6xl lg:text-9xl">
+    animes :p
+  </h2>
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* last watched animes */}
+      <div class="text-center">
+        <h2 class="title text-4xl font-caveat text-black mb-4">
+          last watched anime
+        </h2>
+        <LastWatchedAnime client:load limit={3} />
+      </div>
+
+      {/* favorite animes */}
+      <div class="text-center">
+        <h2 class="title text-4xl font-caveat text-black mb-4">
+          favorite anime
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <div class="w-48 transition-transform duration-300 hover:scale-105">
+            <a
+              href="https://anilist.co/anime/130003/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block"
+            >
+              <div class="h-72 rounded-lg overflow-hidden shadow-lg mb-2">
+                <img
+                  src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx130003-HTDmeL4RGeJ4.png"
+                  alt="Bocchi The Rock!"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3
+                class="text-sm font-medium text-center line-clamp-1 hover:text-blue-500"
+              >
+                Bocchi The Rock!
+              </h3>
+            </a>
+          </div>
+          <div class="w-48 transition-transform duration-300 hover:scale-105">
+            <a
+              href="https://anilist.co/anime/120377/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block"
+            >
+              <div class="h-72 rounded-lg overflow-hidden shadow-lg mb-2">
+                <img
+                  src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120377-ayZPoxiWt4Li.jpg"
+                  alt="Cyberpunk: Edgerunners"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3
+                class="text-sm font-medium text-center line-clamp-1 hover:text-blue-500"
+              >
+                Cyberpunk: Edgerunners
+              </h3>
+            </a>
+          </div>
+          <div class="w-48 transition-transform duration-300 hover:scale-105">
+            <a
+              href="https://anilist.co/anime/171018/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block"
+            >
+              <div class="h-72 rounded-lg overflow-hidden shadow-lg mb-2">
+                <img
+                  src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171018-60q1B6GK2Ghb.jpg"
+                  alt="Dandadan"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3
+                class="text-sm font-medium text-center line-clamp-1 hover:text-blue-500"
+              >
+                Dandadan
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center mt-8">
+  <h2 class="title text-4xl font-caveat text-black mb-4">view more</h2>
+  <div class="flex flex-col items-center gap-4 w-5/12 mx-auto">
+    <a
+      href="https://anilist.co/user/Stageddat/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="w-full px-6 py-3 bg-[#222530] text-white rounded-lg hover:bg-[#2a2f3d] transition-colors duration-300"
+    >
+      AniList (Main)
+    </a>
+    <a
+      href="https://myanimelist.net/profile/Stageddat"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="w-full px-6 py-3 bg-[#41489e] text-white rounded-lg hover:bg-[#2e3a8e] transition-colors duration-300"
+    >
+      MyAnimeList
+    </a>
+  </div>
+</div>
+
+<style>
+  .title {
+    font-family: "Caveat", cursive;
+  }
+</style>
