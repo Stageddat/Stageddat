@@ -1,0 +1,107 @@
+---
+import poopHi from "src/assets/poop/poop-hi2.gif";
+---
+
+<div
+  class="hero w-full h-screen flex flex-col md:flex-row items-center justify-center px-4 gap-8 md:gap-16 relative mb-32"
+>
+  <div class="text-left md:text-left mt-[-4rem] md:mt-0">
+    <h1 class="heroTitle text-7xl md:text-8xl lg:text-[10rem]">haiiiiii :3</h1>
+    <h2 class="heroSubtitle text-6xl md:text-7xl lg:text-[9rem]">
+      im stageddat!
+    </h2>
+
+    <!-- Social Media Links -->
+    <div class="flex items-center justify-center space-x-6 mt-4">
+      <!-- GitHub -->
+      <a
+        href="https://github.com/stageddat"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-black transition-all duration-300 hover:scale-110 relative group"
+        aria-label="GitHub"
+      >
+        <div
+          class="icon-[simple-icons--github] w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+        >
+        </div>
+        <span
+          class="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-handwriting whitespace-nowrap"
+        >
+          GitHub
+        </span>
+      </a>
+
+      <!-- YouTube -->
+      <a
+        href="https://youtube.com/@stageddat"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-black transition-all duration-300 hover:scale-110 relative group"
+        aria-label="YouTube"
+      >
+        <div
+          class="icon-[simple-icons--youtube] w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+        >
+        </div>
+        <span
+          class="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-handwriting whitespace-nowrap"
+        >
+          YouTube
+        </span>
+      </a>
+
+      <!-- Discord -->
+      <a
+        href="https://discord.com/users/756509638169460837"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-black transition-all duration-300 hover:scale-110 relative group"
+        aria-label="Discord"
+      >
+        <div
+          class="icon-[simple-icons--discord] w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+        >
+        </div>
+        <span
+          class="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-handwriting whitespace-nowrap"
+        >
+          Discord
+        </span>
+      </a>
+    </div>
+  </div>
+  <div class="flex justify-center items-center">
+    <img
+      src={poopHi.src}
+      alt="Poop waving hi"
+      class="w-64 h-64 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] object-contain"
+      loading="eager"
+    />
+  </div>
+  <div
+    class="absolute bottom-16 md:bottom-8 w-full flex justify-center animate-bounce"
+  >
+    <svg
+      class="w-12 h-12 text-black"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</div>
+
+<style>
+  .heroTitle,
+  .heroSubtitle {
+    @apply font-bold;
+    font-family: "Caveat", cursive;
+  }
+</style>

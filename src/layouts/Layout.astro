@@ -1,44 +1,24 @@
 ---
 interface Props {
-    title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
+
+import SpeedInsights from "@vercel/speed-insights/astro";
 ---
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content="hi, im stageddat :)" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/x-icon" href="/favicon.webp" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-    </head>
-    <body>
-        <slot />
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="hi, im stageddat :)" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.webp" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <SpeedInsights />
+  </body>
 </html>
-
-<style is:global>
-    :root {
-        --font-caveat: "Caveat", cursive;
-    }
-
-    html {
-        font-family: system-ui, sans-serif;
-        background: #222;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-    }
-</style>
