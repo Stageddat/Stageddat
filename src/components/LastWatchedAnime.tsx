@@ -1,3 +1,4 @@
+import { Image } from 'astro:assets';
 import { useState, useEffect } from 'react';
 
 interface AnimeMediaTitle {
@@ -65,6 +66,20 @@ interface AnimeData {
 
 interface LastWatchedAnimeProps {
 	limit?: number;
+}
+
+function OptimizedAnimeImage({ src, alt }: { src: string; alt: string }) {
+	return (
+		<img
+			src={src}
+			alt={alt}
+			width={192}
+			height={288}
+			loading="lazy"
+			decoding="async"
+			className="w-full h-full object-cover"
+		/>
+	);
 }
 
 export default function LastWatchedAnime({ limit = 3 }: LastWatchedAnimeProps) {
@@ -218,10 +233,9 @@ export default function LastWatchedAnime({ limit = 3 }: LastWatchedAnimeProps) {
 						className="block"
 					>
 						<div className="h-72 rounded-lg overflow-hidden shadow-lg mb-2">
-							<img
+							<OptimizedAnimeImage
 								src={anime.coverImage}
 								alt={anime.title}
-								className="w-full h-full object-cover"
 							/>
 						</div>
 						<h3 className="text-sm font-medium text-center line-clamp-1 hover:text-blue-500" title={anime.title}>
