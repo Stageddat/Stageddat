@@ -14,7 +14,7 @@ import { Image } from "astro:assets";
         <h2 class="title text-4xl font-caveat text-black mb-4">
           last watched anime
         </h2>
-        <LastWatchedAnime client:load limit={3} />
+        <LastWatchedAnime client:visible limit={3} />
       </div>
 
       {/* favorite animes */}
