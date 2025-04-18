@@ -11,15 +11,15 @@ const dandadanImage =
   "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171018-60q1B6GK2Ghb.jpg";
 ---
 
-<div class="py-6 px-4 sm:px-6 lg:px-8">
-  <h2 class="title text-center py-12 text-5xl md:text-6xl lg:text-9xl">
+<div class="py-2 px-4 sm:px-6 lg:px-8">
+  <h2 class="title text-center py-1 text-6xl md:text-6xl lg:text-9xl">
     animes :p
   </h2>
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {/* last watched animes */}
       <div class="text-center">
-        <h2 class="title text-4xl font-caveat text-black mb-4">
+        <h2 class="title text-4xl font-caveat text-gray-500 mb-4">
           last watched anime
         </h2>
         <LastWatchedAnime client:visible limit={3} />
@@ -27,7 +27,7 @@ const dandadanImage =
 
       {/* favorite animes */}
       <div class="text-center">
-        <h2 class="title text-4xl font-caveat text-black mb-4">
+        <h2 class="title text-4xl font-caveat text-gray-500 mb-4">
           favorite anime
         </h2>
         <div class="flex flex-wrap justify-center gap-4">
@@ -105,9 +105,11 @@ const dandadanImage =
     </div>
   </div>
 </div>
-<div class="text-center mt-8">
-  <h2 class="title text-4xl font-caveat text-black mb-4">view more</h2>
-  <div class="flex flex-col items-center gap-4 w-5/12 mx-auto">
+<div class="text-center mt-2">
+  <h2 class="title text-4xl font-caveat text-black mb-4">
+    view more about my animes
+  </h2>
+  <div class="flex flex-col items-center gap-4 w-2/12 mx-auto">
     <a
       href="https://anilist.co/user/Stageddat/"
       target="_blank"
