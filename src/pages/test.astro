@@ -2,4 +2,17 @@
 import { Spoiler } from "spoiled";
 ---
 
-<Spoiler client:load> who read this is gay </Spoiler>
+<div class="flex items-center justify-center min-h-screen w-full">
+  <Spoiler client:load>
+    <span
+      class="text-4xl md:text-9xl font-bold text-center select-none text-white"
+      >who read this is gay</span
+    >
+  </Spoiler>
+</div>
+
+<style>
+  body {
+    background-color: black;
+  }
+</style>
