@@ -1,6 +1,7 @@
 import type { ImageMetadata } from "astro";
 
 import baityImg from "src/assets/authors/baity.jpeg";
+import tennyImg from "src/assets/authors/silly-cat.jpg";
 import arthurImg from "src/assets/authors/arthur.jpg";
 import arthurImg2 from "src/assets/authors/arthur2.jpeg";
 import arthurImg3 from "src/assets/authors/arthur3.png";
@@ -21,6 +22,12 @@ export interface QuoteData {
 }
 
 export const quotes: QuoteData[] = [
+  {
+    text: "Sometimes you gotta take changes.",
+    subtitle: "",
+    author: "Tenny",
+    image: tennyImg,
+  },
   {
     text: "i have no money",
     subtitle: "",
