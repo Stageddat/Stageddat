@@ -25,7 +25,7 @@ export const quotes: QuoteData[] = [
   {
     text: "Sometimes you gotta take changes.",
     subtitle: "",
-    author: "Tenny",
+    author: "Fiddle",
     image: tennyImg,
   },
   {
