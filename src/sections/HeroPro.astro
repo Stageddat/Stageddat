@@ -1,0 +1,111 @@
+<div
+  class="hero w-full h-lvh flex flex-col md:flex-row items-center justify-center px-4 gap-8 md:gap-16 relative"
+>
+  <div class="text-left md:mt-0">
+    <h1 class="heroTitle text-7xl md:text-8xl lg:text-[10rem]">
+      hey <span class="wave" role="img">👋</span>
+    </h1>
+    <h2 class="heroSubtitle text-6xl md:text-7xl lg:text-[9rem]">
+      i'm stageddat!
+    </h2>
+
+    <div class="flex items-center justify-left space-x-6 mt-4 ml-4">
+      <a
+        href="https://github.com/stageddat"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-black transition-all duration-300 hover:scale-110 relative group"
+        aria-label="GitHub"
+      >
+        <div
+          class="icon-[simple-icons--github] w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+        >
+        </div>
+        <span
+          class="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-handwriting whitespace-nowrap"
+        >
+          GitHub
+        </span>
+      </a>
+
+      <a
+        href="https://youtube.com/@stageddat"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-black transition-all duration-300 hover:scale-110 relative group"
+        aria-label="YouTube"
+      >
+        <div
+          class="icon-[simple-icons--youtube] w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+        >
+        </div>
+        <span
+          class="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-handwriting whitespace-nowrap"
+        >
+          YouTube
+        </span>
+      </a>
+
+      <a
+        href="https://discord.com/users/756509638169460837"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-black transition-all duration-300 hover:scale-110 relative group"
+        aria-label="Discord"
+      >
+        <div
+          class="icon-[simple-icons--discord] w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+        >
+        </div>
+        <span
+          class="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-handwriting whitespace-nowrap"
+        >
+          Discord
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <style>
+    .heroTitle,
+    .heroSubtitle {
+      @apply font-bold;
+      font-family: "Raleway", serif;
+    }
+
+    .wave {
+      animation-name: wave-animation;
+      animation-duration: 2.1s;
+      animation-iteration-count: infinite;
+      transform-origin: 70% 70%;
+      display: inline-block;
+    }
+
+    @keyframes wave-animation {
+      0% {
+        transform: rotate(0deg);
+      }
+      10% {
+        transform: rotate(14deg);
+      }
+      20% {
+        transform: rotate(-8deg);
+      }
+      30% {
+        transform: rotate(14deg);
+      }
+      40% {
+        transform: rotate(-4deg);
+      }
+      50% {
+        transform: rotate(10deg);
+      }
+      60% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+</div>
