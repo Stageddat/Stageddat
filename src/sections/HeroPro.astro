@@ -5,107 +5,87 @@
     <h1 class="heroTitle text-7xl md:text-8xl lg:text-[10rem]">
       hey <span class="wave" role="img">👋</span>
     </h1>
-    <h2 class="heroSubtitle text-6xl md:text-7xl lg:text-[9rem]">
-      i'm stageddat!
+    <h2
+      class="heroSubtitle text-4xl sm:text-5xl md:text-7xl lg:text-[11rem] leading-snug sm:leading-tight md:leading-[0.9]"
+      style="font-family: 'Raleway', serif;"
+    >
+      i'm <span class="whitespace-nowrap">stageddat</span>!
     </h2>
 
-    <div class="flex items-center justify-left space-x-6 mt-4 ml-4">
+    <div
+      class="flex flex-wrap items-center justify-start space-x-4 sm:space-x-6 mt-4 ml-0 sm:ml-4 text-2xl sm:text-3xl font-handwriting"
+    >
       <a
         href="https://github.com/stageddat"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-black transition-all duration-300 hover:scale-110 relative group"
-        aria-label="GitHub"
+        class="hover:text-purple-500 hover:underline">github</a
       >
-        <div
-          class="icon-[simple-icons--github] w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-        >
-        </div>
-        <span
-          class="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-handwriting whitespace-nowrap"
-        >
-          GitHub
-        </span>
-      </a>
-
       <a
         href="https://youtube.com/@stageddat"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-black transition-all duration-300 hover:scale-110 relative group"
-        aria-label="YouTube"
+        class="hover:text-red-500 hover:underline">youtube</a
       >
-        <div
-          class="icon-[simple-icons--youtube] w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-        >
-        </div>
-        <span
-          class="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-handwriting whitespace-nowrap"
-        >
-          YouTube
-        </span>
-      </a>
-
       <a
         href="https://discord.com/users/756509638169460837"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-black transition-all duration-300 hover:scale-110 relative group"
-        aria-label="Discord"
+        class="hover:text-blue-500 hover:underline">discord</a
       >
-        <div
-          class="icon-[simple-icons--discord] w-12 h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-        >
-        </div>
-        <span
-          class="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-handwriting whitespace-nowrap"
-        >
-          Discord
-        </span>
-      </a>
+      <a
+        href="/fun"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-green-500 hover:underline">fun :3</a
+      >
     </div>
+
+    <style>
+      .heroTitle,
+      .heroSubtitle {
+        @apply font-bold;
+        font-family: "Raleway", serif;
+      }
+
+      a {
+        font-family: "Raleway", serif;
+      }
+
+      .wave {
+        animation-name: wave-animation;
+        animation-duration: 2.1s;
+        animation-iteration-count: infinite;
+        transform-origin: 70% 70%;
+        display: inline-block;
+      }
+
+      @keyframes wave-animation {
+        0% {
+          transform: rotate(0deg);
+        }
+        10% {
+          transform: rotate(14deg);
+        }
+        20% {
+          transform: rotate(-8deg);
+        }
+        30% {
+          transform: rotate(14deg);
+        }
+        40% {
+          transform: rotate(-4deg);
+        }
+        50% {
+          transform: rotate(10deg);
+        }
+        60% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
   </div>
-
-  <style>
-    .heroTitle,
-    .heroSubtitle {
-      @apply font-bold;
-      font-family: "Raleway", serif;
-    }
-
-    .wave {
-      animation-name: wave-animation;
-      animation-duration: 2.1s;
-      animation-iteration-count: infinite;
-      transform-origin: 70% 70%;
-      display: inline-block;
-    }
-
-    @keyframes wave-animation {
-      0% {
-        transform: rotate(0deg);
-      }
-      10% {
-        transform: rotate(14deg);
-      }
-      20% {
-        transform: rotate(-8deg);
-      }
-      30% {
-        transform: rotate(14deg);
-      }
-      40% {
-        transform: rotate(-4deg);
-      }
-      50% {
-        transform: rotate(10deg);
-      }
-      60% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(0deg);
-      }
-    }
-  </style>
 </div>
