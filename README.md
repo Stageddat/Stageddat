@@ -27,10 +27,10 @@
 <h2 align="left">stats</h2>
 
 <div align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=Stageddat&theme=dark&hide_border=true&bg_color=00000000" height="170" />
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=Stageddat&theme=dark&hide_border=true&layout=compact&bg_color=00000000" height="170" />
+  <img src="https://github-readme-stats.shion.dev/api?username=Stageddat&theme=dark&hide_border=true&bg_color=00000000" height="300" />
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=stageddat&hide=jupyter%20notebook&layout=compact&langs_count=50&theme=dark&hide_border=true&bg_color=00000000" height="300" />
   <br>
-  <img src="https://streak-stats.demolab.com/?user=Stageddat&theme=dark&hide_border=true&hide_bg=true" height="170" />
+  <img src="https://streak-stats.demolab.com/?user=Stageddat&theme=dark&hide_border=true&hide_bg=true" height="300" />
 </div>
 
 ###
