@@ -27,8 +27,8 @@
 <h2 align="left">stats</h2>
 
 <div align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=Stageddat&theme=dark&hide_border=true&bg_color=00000000" height="300" />
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=stageddat&hide=jupyter%20notebook&layout=compact&langs_count=50&theme=dark&hide_border=true&bg_color=00000000" height="300" />
+  <img src="https://github-readme-stats.shion.dev/api?username=Stageddat&theme=dark&hide_border=true&bg_color=00000000&include_all_commits=true" height="300" />
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=stageddat&hide=jupyter%20notebook&layout=compact&langs_count=50&theme=dark&hide_border=true&bg_color=00000000&include_all_commits=true" height="300" />
   <br>
   <img src="https://streak-stats.demolab.com/?user=Stageddat&theme=dark&hide_border=true&hide_bg=true" height="300" />
 </div>
