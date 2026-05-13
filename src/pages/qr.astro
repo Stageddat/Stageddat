@@ -1,0 +1,8 @@
+---
+const redirectUrl =
+  "https://drive.google.com/file/d/1Fbqapuw-kQYFK0Mjg0UCA1dYB4LwqKAi/view?usp=sharing";
+
+return Astro.redirect(redirectUrl);
+---
+
+<meta http-equiv="refresh" content={`0;url=${redirectUrl}`} />
